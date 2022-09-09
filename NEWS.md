@@ -36,3 +36,6 @@
 
 # Changes in version 1.2.1 (2021-04-27)
 * Clarified vignette text and added troubleshooting tips
+
+# Changes in version 1.2.2 (2022-09-09)
+* fixed bugs
