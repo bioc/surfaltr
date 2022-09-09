@@ -60,7 +60,6 @@ clean_data <- function(data_file, if_aa, organism) {
             httr::set_config(httr::config(ssl_verifypeer = 0L))
             ensembl <- biomaRt::useEnsembl(
                 biomart = "genes", dataset = "hsapiens_gene_ensembl",
-                mirror = "useast"
             )
             compare <- biomaRt::getBM(
                 attributes = c(
