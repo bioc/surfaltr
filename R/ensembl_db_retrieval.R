@@ -18,7 +18,7 @@ ensembl_db_retrieval <- function(organism) {
     if (organism == "human") {
         httr::set_config(config(ssl_verifypeer = 0L))
         ensembl <- biomaRt::useEnsembl(biomart = "genes", 
-        dataset = "hsapiens_gene_ensembl", mirror = "useast")
+        dataset = "hsapiens_gene_ensembl")
         humandb <- biomaRt::getBM(
             attributes = c(
                 "external_gene_name", "ensembl_gene_id",
