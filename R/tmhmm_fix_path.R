@@ -17,10 +17,10 @@
 #' @importFrom testthat expect_equal
 #' @importFrom stringr str_remove
 
-tmhmm_fix_path <- function(fasta_filename, tmhmm_folder_name) {
-    bin_path <- normalizePath(file.path(tmhmm_folder_name, "bin", "decodeanhmm.linux"))
-    options_path <- file.path(tmhmm_folder_name, "lib","TMHMM2.0.options")
-    model_path <- file.path(tmhmm_folder_name, "lib","TMHMM2.0.model")
+tmhmm_fix_path <- function(fasta_filename, folder_name) {
+    bin_path <- normalizePath(file.path(folder_name, "bin", "decodeanhmm.linux"))
+    options_path <- file.path(folder_name, "lib","TMHMM2.0.options")
+    model_path <- file.path(folder_name, "lib","TMHMM2.0.model")
     cmds <- c("-f", options_path, "-modelfile", model_path)
     text <- NA
     suppressWarnings(text <- system2(

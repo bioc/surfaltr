@@ -20,3 +20,5 @@
 # Changes in version 1.2.0 (2021-02-05)
 * Clarified vignette text and added troubleshooting tips
 
+# Changes in version 1.5.1 (2022-08-12)
+* Fixed warning
